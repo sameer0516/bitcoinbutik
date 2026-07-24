@@ -1,0 +1,104 @@
+.CareGuide {
+  background-color: #fdf6e3;
+  padding: 100px 20px;
+}
+
+.CareGuide .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.CareGuide-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.CareGuide-header h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 42px;
+  font-weight: 400;
+  color: #4a3b1f;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.CareGuide-subtitle {
+  font-size: 15px;
+  font-weight: 500; 
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #7a5c2e;
+}
+
+.CareGuide-intro {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.CareGuide-intro h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+  color: #4a3b1f;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.CareGuide-intro p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #3d3d3d;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.CareGuide-tipsTitle {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  text-align: center;
+  color: #4a3b1f;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.CareGuide-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 60px;
+}
+
+.CareGuide-tip {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.CareGuide-tipIcon {
+  flex-shrink: 0;
+  color: #7a5c2e;
+  margin-top: 4px;
+}
+
+.CareGuide-tipContent h3 {
+  font-size: 19px;
+  font-weight: 700;
+  color: #4a3b1f;
+  margin-bottom: 8px;
+}
+
+.CareGuide-tipContent p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #3d3d3d;
+}
+
+@media (max-width: 768px) {
+  .CareGuide-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .CareGuide-header h1 {
+    font-size: 30px;
+  }
+}

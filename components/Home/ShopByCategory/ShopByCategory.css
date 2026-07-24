@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap');
+
+.shop-category-section {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+    text-align: center;
+    background-color: #ecdcc4;
+}
+
+.shop-category-heading {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #4a5568;
+    letter-spacing: 1px;
+    margin-bottom: 2.5rem;
+}
+
+.shop-category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+}
+
+.shop-category-card {
+    position: relative;
+    display: block;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    text-decoration: none;
+}
+
+.shop-category-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.shop-category-card:hover .shop-category-image {
+    transform: scale(1.05);
+}
+
+.shop-category-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 90px;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 1rem 1.25rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0));
+}
+
+.shop-category-name {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 992px) {
+    .shop-category-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+    }
+}
+
+@media (max-width: 576px) {
+    .shop-category-heading {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .shop-category-section {
+        padding: 2.5rem 1rem;
+    }
+
+    .shop-category-overlay {
+        height: 70px;
+        padding-bottom: 0.75rem;
+    }
+
+    .shop-category-name {
+        font-size: 0.9rem;
+    }
+}
